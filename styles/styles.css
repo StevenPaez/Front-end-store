@@ -38,7 +38,7 @@ a {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 .contenedor {
@@ -65,3 +65,69 @@ h2 {
 h3 {
     font-size: 2.4rem;
 }
+
+/*HEADER*/
+
+.header {
+    display: flex;
+    justify-content: center;
+
+}
+
+.header__logo {
+    margin: 3rem 0;
+}
+
+/*FOOTER*/
+
+.footer {
+    background-color: var(--primarioOscuro);
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.footer__texto {
+    text-align: center;
+    font-family: var(--fuentePrincipal);
+    font-size: 2.2rem;
+}
+
+/*NAVEGACION*/
+
+.navegacion {
+    background-color: var(--primarioOscuro);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    /*gap: 2rem; /*Nueva forma de separar columnas, no soportada aún por safari*/
+}
+
+.navegacion__enlace {
+    font-family: var(--fuentePrincipal);
+    color: var(--blanco);
+    font-size: 3rem;
+    margin-right: 2rem;
+    /*Antigua forma de separar columnas*/
+}
+
+.navegacion__enlace:last-of-type {
+    margin-right: 0;
+    /*Antigua forma de separar columnas*/
+}
+
+.navegacion__enlace--activo,
+.navegacion__enlace:hover {
+    color: var(--secundario);
+}
+
+/*PRODUCTOS*/
+
+.producto {}
+
+.producto__imagen {}
+
+.producto__informacion {}
+
+.producto__nombre {}
+
+.producto__precio {}
