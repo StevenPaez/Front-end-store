@@ -38,7 +38,7 @@ a {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
 }
 
 .contenedor {
@@ -140,9 +140,7 @@ h3 {
     padding: 1rem;
 }
 
-.producto__imagen {
-    width: 100%;
-}
+
 
 .producto__nombre {
     font-size: 4rem;
@@ -203,7 +201,6 @@ h3 {
 
 .nosotros__imagen{
     grid-row: 1 / 2;
-    width: 100%;
 }
 @media (min-width: 768px) {
     .nosotros__imagen{
@@ -229,10 +226,55 @@ h3 {
     text-align: center;
 }
 
-.bloque__imagen{
-    width: 100%;
-}
-
 .bloque__titulo{
     margin: 0;
+}
+
+/*PAGINA DEL PRODUCTO*/
+
+@media (min-width: 768px) {
+    .camisa{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2rem;
+    }
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+
+.formulario__campo{
+    border: 1rem solid var(--primarioOscuro);
+    /*
+    BORDER
+    border-color: var(--primarioOscuro);
+    border-width: 1rem;
+    border-style: solid;
+    */
+    background-color: transparent;
+    color: var(--blanco);
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    appearance: none;
+}
+
+.formulario__submit{
+    background-color: var(--secundario);
+    border: none;
+    font-size: 2rem;
+    font-family: var(--fuentePrincipal);
+    padding: 2rem;
+    transition: background-color .3s ease;
+    transition: font-size .3s ease;
+    grid-column: 1 / 3;
+}
+
+.formulario__submit:hover{
+    font-size: 2.2rem;
+    cursor: pointer;
+    background-color: var(--secundarioOscuro);
 }
